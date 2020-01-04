@@ -10,7 +10,7 @@
 
 ## Features
 
-1. Interactive CLI that prompts for data about the Plex media to be downloaded.
+1. CLI utility that downloads Plex media and saves it to a local file.
 
 ## Quick Start
 
