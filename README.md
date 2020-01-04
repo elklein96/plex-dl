@@ -34,6 +34,18 @@ Success! File downloaded without error.
 Please check /Users/evanklein/Downloads/Inception.mp4
 ```
 
+#### Non-interactive mode
+
+To use plex-dl in a non-interactive mode, supply the following CLI flags:
+
+```bash
+$ plex-dl \
+  --baseUrl https://255-255-255-255.dygevsK8qUWrIXGjXFzhFQDjgbpQWpnW.plex.direct:32400
+  --mediaId 123456 \
+  --authToken wa3iJvt3nKzi12Pr1Zxq \
+  --outputDirectory ~/Downloads
+```
+
 ## FAQ
 
 ### What are some example inputs for the CLI prompts
