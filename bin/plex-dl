@@ -5,4 +5,4 @@ const cli = require('../src');
 
 process.title = 'plex-dl';
 
-cli.main();
+cli.main(process.argv);

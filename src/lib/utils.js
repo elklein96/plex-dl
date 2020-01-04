@@ -16,12 +16,32 @@ const rl = readline.createInterface({
 const parser = new xml2js.Parser();
 
 const service = {
+    processCliArgs,
     promptForInput,
     parseXmlMetadata,
     downloadMedia,
     touchFile
 };
 module.exports = service;
+
+function processCliArgs(argv) {
+    const keys = [
+        'baseUrl',
+        'mediaId',
+        'authToken',
+        'outputDirectory'
+    ];
+
+    const cliArgs = keys.reduce((acc, key) => {
+        const keyIndex = argv.indexOf(`--${key}`);
+        if (keyIndex > -1) {
+            acc[key] = argv[keyIndex + 1];
+        }
+        return acc;
+    }, {});
+
+    return cliArgs;
+}
 
 async function promptForInput(input) {
     const prompt = `> ${input}: `;
