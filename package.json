@@ -1,6 +1,6 @@
 {
   "name": "plex-dl",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A CLI utility to download media files from a Plex Server",
   "main": "src/index.js",
   "bin": {
